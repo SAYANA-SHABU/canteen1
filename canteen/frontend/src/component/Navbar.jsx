@@ -63,17 +63,18 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Right: Admin Login
+        
         <div className="navbar-right">
           <div className="desktop-nav">
             <Link to="/admin/login" className="nav-link">
               <span className="nav-link-text">Admin Login</span>
             </Link>
           </div>
-        </div> */}
+        </div> 
       </div>
     </nav>
   );
 };
+
 
 export default Navbar;
