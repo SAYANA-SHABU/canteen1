@@ -152,7 +152,7 @@
 
 .search-icon {
   position: absolute;
-  left: 20px;
+  left: 2px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.2rem;
@@ -1534,4 +1534,5 @@
   .item-count-badge {
     align-self: flex-start;
   }
+
 }
