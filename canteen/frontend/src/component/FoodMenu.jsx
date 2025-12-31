@@ -463,7 +463,7 @@ const FoodMenu = () => {
           <span className="search-icon">🔍</span>
           <input
             type="text"
-            placeholder="Search for dishes..."
+            placeholder="   Search for dishes..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="search-input"
@@ -698,5 +698,6 @@ const FoodMenu = () => {
     </div>
   );
 };
+
 
 export default FoodMenu;
