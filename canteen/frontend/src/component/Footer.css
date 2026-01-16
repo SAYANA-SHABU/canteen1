@@ -1,0 +1,180 @@
+/* Footer - Professional navy blue theme matching navbar and other pages */
+.footer {
+  background: #2c3e50; /* Navy blue background for consistency */
+  color: #f8f9fa; /* Light gray text for contrast */
+  padding: 4rem 2rem 2rem;
+  position: relative;
+  margin-top: 4rem;
+  overflow: hidden; /* Contain any overflow */
+  box-shadow: 0 -4px 20px rgba(44, 62, 80, 0.3); /* Subtle shadow like navbar */
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-section {
+  animation: fadeInUp 0.6s ease-out;
+  text-align: center;
+  /* Removed border, background, box-shadow, and hover effects to make it flat like a footer */
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: 'Arial', sans-serif; /* Clean, standard font */
+}
+
+.footer-logo-icon {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.footer-logo-text {
+  font-size: 1.8rem;
+  color: #f8f9fa;
+}
+
+.footer-logo-highlight {
+  color: #f8f9fa; /* Light gray for subtle emphasis, matching navbar */
+  animation: shimmer 3s ease-in-out infinite; /* Kept shimmer */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(248, 249, 250, 0.9);
+}
+
+@keyframes shimmer {
+  0%, 100% { 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(248, 249, 250, 0.7); 
+  }
+  50% { 
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(248, 249, 250, 0.9), 0 0 20px rgba(248, 249, 250, 0.5); 
+  }
+}
+
+.footer-description {
+  color: #e9ecef; /* Light gray for readability */
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 3rem auto 0;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(248, 249, 250, 0.2); /* Light gray border */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+  background: rgba(44, 62, 80, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer-bottom p {
+  color: #e9ecef;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-bottom-links a {
+  color: #e9ecef;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #f8f9fa;
+  text-shadow: 0 0 10px rgba(248, 249, 250, 0.6);
+}
+
+.footer-waves {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.footer-waves svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  fill: #2c3e50; /* Matching navy background */
+  animation: wave-flow 5s ease-in-out infinite; /* Unique wave animation */
+}
+
+@keyframes wave-flow {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 1rem 1rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    padding: 1.5rem;
+  }
+}
